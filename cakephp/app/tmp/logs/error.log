@@ -1,0 +1,1169 @@
+2013-09-27 21:07:54 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/app/Config/bootstrap.php(74): CakePlugin::load('DebugKit')
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/Configure.php(92): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/bootstrap.php(177): Configure::bootstrap(true)
+#3 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(92): include('/Applications/M...')
+#4 {main}
+2013-09-29 14:23:51 Error: [MissingActionException] Action AppController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'index',
+)
+Request URL: /cakephp/app/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-09-29 14:24:21 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /cakephp/app/webroot/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-09-29 14:54:56 Error: [MissingActionException] Action AppController::tmp() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'tmp',
+)
+Request URL: /cakephp/app/tmp/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-09-29 15:01:41 Error: [MissingControllerException] Controller class Who.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Who.phpController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/who.php
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-29 15:02:08 Error: [MissingControllerException] Controller class Who.phpController could not be found.
+Exception Attributes: array (
+  'class' => 'Who.phpController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/who.php
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-09-29 15:12:30 Error: [MissingActionException] Action PostsController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'index',
+)
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-09-29 15:14:25 Error: [MissingActionException] Action PostsController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'index',
+)
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-09-29 15:14:27 Error: [MissingActionException] Action PostsController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'index',
+)
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-09-29 15:20:38 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp',
+)
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-29 15:22:01 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp',
+)
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-29 15:22:03 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp',
+)
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-29 15:22:09 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp',
+)
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-29 15:25:40 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp',
+)
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-29 15:26:06 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp',
+)
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-29 15:26:08 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp',
+)
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-29 15:27:10 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp',
+)
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-29 15:27:14 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp',
+)
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-29 15:27:59 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp',
+)
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-29 15:28:02 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp',
+)
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-29 15:28:42 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp',
+)
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-29 15:28:43 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp',
+)
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-29 15:29:11 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp',
+)
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-29 15:29:13 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp',
+)
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-29 15:29:17 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp',
+)
+Request URL: /cakephp/Posts/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-29 15:29:25 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp',
+)
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-29 15:34:03 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp',
+)
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-29 15:34:06 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp',
+)
+Request URL: /cakephp/Posts/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-29 15:34:11 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp',
+)
+Request URL: /cakephp/posts
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-29 15:34:48 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp',
+)
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-29 15:37:18 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp',
+)
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-29 15:45:50 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp',
+)
+Request URL: /cakephp/posts
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-09-29 15:46:41 Error: Fatal Error (4): syntax error, unexpected '}' in [/Applications/MAMP/htdocs/cakephp/app/Controller/PostsController.php, line 10]
+2013-09-29 15:46:41 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /cakephp/posts
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 10, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 10, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 15:46:43 Error: Fatal Error (4): syntax error, unexpected '}' in [/Applications/MAMP/htdocs/cakephp/app/Controller/PostsController.php, line 10]
+2013-09-29 15:46:43 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /cakephp/posts
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 10, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 10, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 16:06:12 Error: Fatal Error (4): syntax error, unexpected '}' in [/Applications/MAMP/htdocs/cakephp/app/Controller/PostsController.php, line 9]
+2013-09-29 16:06:12 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /cakephp/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 9, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 9, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 19:12:46 Error: Fatal Error (4): syntax error, unexpected T_STRING in [/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp, line 10]
+2013-09-29 19:12:46 Error: [FatalErrorException] syntax error, unexpected T_STRING
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 10, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 10, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 19:14:27 Error: [MissingActionException] Action PostsController::view1() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'view1',
+)
+Request URL: /cakephp/posts/view1
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-09-29 19:14:29 Error: [MissingActionException] Action PostsController::view2() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'view2',
+)
+Request URL: /cakephp/posts/view2
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-09-29 19:14:31 Error: [MissingActionException] Action PostsController::view3() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'view3',
+)
+Request URL: /cakephp/posts/view3
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-09-29 19:14:35 Error: [MissingActionException] Action PostsController::view1() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'view1',
+)
+Request URL: /cakephp/posts/view1
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-09-29 19:14:52 Error: [MissingActionException] Action PostsController::view1() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'view1',
+)
+Request URL: /cakephp/posts/view1
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-09-29 19:14:56 Error: [MissingActionException] Action PostsController::view2() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'view2',
+)
+Request URL: /cakephp/posts/view2
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-09-29 19:15:04 Error: [MissingActionException] Action PostsController::view1() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'view1',
+)
+Request URL: /cakephp/posts/view1
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-09-29 19:18:46 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting T_VARIABLE or '$' in [/Applications/MAMP/htdocs/cakephp/app/View/Layouts/default.ctp, line 43]
+2013-09-29 19:18:46 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting T_VARIABLE or '$'
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 43)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 43, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 43, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 19:29:05 Error: Fatal Error (4): syntax error, unexpected ',', expecting '(' in [/Applications/MAMP/htdocs/cakephp/app/Controller/PostsController.php, line 6]
+2013-09-29 19:29:05 Error: [FatalErrorException] syntax error, unexpected ',', expecting '('
+Request URL: /cakephp/posts
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 6, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 6, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 19:29:43 Error: Fatal Error (4): syntax error, unexpected ',', expecting '(' in [/Applications/MAMP/htdocs/cakephp/app/Controller/PostsController.php, line 6]
+2013-09-29 19:29:43 Error: [FatalErrorException] syntax error, unexpected ',', expecting '('
+Request URL: /cakephp/posts
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 6, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 6, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 19:29:44 Error: Fatal Error (4): syntax error, unexpected ',', expecting '(' in [/Applications/MAMP/htdocs/cakephp/app/Controller/PostsController.php, line 6]
+2013-09-29 19:29:44 Error: [FatalErrorException] syntax error, unexpected ',', expecting '('
+Request URL: /cakephp/posts
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 6, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 6, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 19:30:01 Error: Fatal Error (4): syntax error, unexpected T_ELSE in [/Applications/MAMP/htdocs/cakephp/app/Controller/PostsController.php, line 20]
+2013-09-29 19:30:01 Error: [FatalErrorException] syntax error, unexpected T_ELSE
+Request URL: /cakephp/posts
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 20, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 20, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 19:30:32 Error: Fatal Error (4): syntax error, unexpected T_ELSE in [/Applications/MAMP/htdocs/cakephp/app/Controller/PostsController.php, line 20]
+2013-09-29 19:30:32 Error: [FatalErrorException] syntax error, unexpected T_ELSE
+Request URL: /cakephp/posts
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 20, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 20, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 19:35:23 Error: Fatal Error (4): syntax error, unexpected T_ELSE in [/Applications/MAMP/htdocs/cakephp/app/Controller/PostsController.php, line 20]
+2013-09-29 19:35:23 Error: [FatalErrorException] syntax error, unexpected T_ELSE
+Request URL: /cakephp/posts
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 20, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 20, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 19:37:43 Error: Fatal Error (4): syntax error, unexpected $end, expecting T_FUNCTION in [/Applications/MAMP/htdocs/cakephp/app/Controller/PostsController.php, line 25]
+2013-09-29 19:37:43 Error: [FatalErrorException] syntax error, unexpected $end, expecting T_FUNCTION
+Request URL: /cakephp/posts
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 25)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 25, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 25, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 19:37:45 Error: Fatal Error (4): syntax error, unexpected $end, expecting T_FUNCTION in [/Applications/MAMP/htdocs/cakephp/app/Controller/PostsController.php, line 25]
+2013-09-29 19:37:45 Error: [FatalErrorException] syntax error, unexpected $end, expecting T_FUNCTION
+Request URL: /cakephp/posts
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 25)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 25, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 25, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 19:45:59 Error: Fatal Error (4): syntax error, unexpected $end, expecting T_FUNCTION in [/Applications/MAMP/htdocs/cakephp/app/Controller/PostsController.php, line 25]
+2013-09-29 19:45:59 Error: [FatalErrorException] syntax error, unexpected $end, expecting T_FUNCTION
+Request URL: /cakephp/posts
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 25)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 25, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 25, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 19:46:01 Error: Fatal Error (4): syntax error, unexpected $end, expecting T_FUNCTION in [/Applications/MAMP/htdocs/cakephp/app/Controller/PostsController.php, line 25]
+2013-09-29 19:46:01 Error: [FatalErrorException] syntax error, unexpected $end, expecting T_FUNCTION
+Request URL: /cakephp/posts
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 25)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 25, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 25, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 19:48:51 Error: Fatal Error (4): syntax error, unexpected $end, expecting T_FUNCTION in [/Applications/MAMP/htdocs/cakephp/app/Controller/PostsController.php, line 25]
+2013-09-29 19:48:51 Error: [FatalErrorException] syntax error, unexpected $end, expecting T_FUNCTION
+Request URL: /cakephp/posts
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 25)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 25, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 25, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 19:54:08 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [/Applications/MAMP/htdocs/cakephp/app/View/Posts/add.ctp, line 6]
+2013-09-29 19:54:08 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+Request URL: /cakephp/posts/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 6, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 6, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 19:57:15 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [/Applications/MAMP/htdocs/cakephp/app/View/Posts/add.ctp, line 6]
+2013-09-29 19:57:15 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+Request URL: /cakephp/posts/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 6, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 6, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 19:57:17 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [/Applications/MAMP/htdocs/cakephp/app/View/Posts/add.ctp, line 6]
+2013-09-29 19:57:17 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+Request URL: /cakephp/posts/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 6, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 6, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 19:59:16 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [/Applications/MAMP/htdocs/cakephp/app/Controller/PostsController.php, line 18]
+2013-09-29 19:59:16 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cakephp/posts/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 18, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 18, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 19:59:59 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [/Applications/MAMP/htdocs/cakephp/app/Controller/PostsController.php, line 18]
+2013-09-29 19:59:59 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cakephp/posts/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 18, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 18, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 20:07:19 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [/Applications/MAMP/htdocs/cakephp/app/Controller/PostsController.php, line 18]
+2013-09-29 20:07:19 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cakephp/posts/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 18, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 18, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 20:08:16 Error: Fatal Error (4): syntax error, unexpected T_VAR in [/Applications/MAMP/htdocs/cakephp/app/Controller/AppController.php, line 37]
+2013-09-29 20:08:16 Error: [FatalErrorException] syntax error, unexpected T_VAR
+Request URL: /cakephp/posts/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 37)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 37, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 37, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 20:08:18 Error: Fatal Error (4): syntax error, unexpected T_VAR in [/Applications/MAMP/htdocs/cakephp/app/Controller/AppController.php, line 37]
+2013-09-29 20:08:18 Error: [FatalErrorException] syntax error, unexpected T_VAR
+Request URL: /cakephp/posts/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 37)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 37, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 37, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 20:08:32 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [/Applications/MAMP/htdocs/cakephp/app/Controller/PostsController.php, line 18]
+2013-09-29 20:08:32 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cakephp/posts/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 18, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 18, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 20:08:42 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [/Applications/MAMP/htdocs/cakephp/app/Controller/PostsController.php, line 18]
+2013-09-29 20:08:42 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cakephp/posts/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 18, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 18, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 20:11:32 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [/Applications/MAMP/htdocs/cakephp/app/Controller/PostsController.php, line 18]
+2013-09-29 20:11:32 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cakephp/posts/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 18, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 18, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 20:15:12 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [/Applications/MAMP/htdocs/cakephp/app/Controller/PostsController.php, line 18]
+2013-09-29 20:15:12 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cakephp/posts/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 18, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 18, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 20:23:49 Error: Fatal Error (4): syntax error, unexpected T_VAR in [/Applications/MAMP/htdocs/cakephp/app/Controller/AppController.php, line 38]
+2013-09-29 20:23:49 Error: [FatalErrorException] syntax error, unexpected T_VAR
+Request URL: /cakephp/posts
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 38, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 38, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 20:23:52 Error: Fatal Error (4): syntax error, unexpected T_VAR in [/Applications/MAMP/htdocs/cakephp/app/Controller/AppController.php, line 38]
+2013-09-29 20:23:52 Error: [FatalErrorException] syntax error, unexpected T_VAR
+Request URL: /cakephp/posts
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 38, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 38, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 20:23:53 Error: Fatal Error (4): syntax error, unexpected T_VAR in [/Applications/MAMP/htdocs/cakephp/app/Controller/AppController.php, line 38]
+2013-09-29 20:23:53 Error: [FatalErrorException] syntax error, unexpected T_VAR
+Request URL: /cakephp/posts
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 38, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 38, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 20:24:00 Error: Fatal Error (4): syntax error, unexpected T_VAR in [/Applications/MAMP/htdocs/cakephp/app/Controller/AppController.php, line 38]
+2013-09-29 20:24:00 Error: [FatalErrorException] syntax error, unexpected T_VAR
+Request URL: /cakephp/posts/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 38, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 38, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 20:24:01 Error: Fatal Error (4): syntax error, unexpected T_VAR in [/Applications/MAMP/htdocs/cakephp/app/Controller/AppController.php, line 38]
+2013-09-29 20:24:01 Error: [FatalErrorException] syntax error, unexpected T_VAR
+Request URL: /cakephp/posts/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 38, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 38, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 20:25:15 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [/Applications/MAMP/htdocs/cakephp/app/Controller/PostsController.php, line 18]
+2013-09-29 20:25:15 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cakephp/posts/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 18, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 18, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 22:02:20 Error: Fatal Error (4): syntax error, unexpected '}' in [/Applications/MAMP/htdocs/cakephp/app/Model/Post.php, line 13]
+2013-09-29 22:02:20 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /cakephp/posts/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 13, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 13, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-29 23:44:49 Error: Fatal Error (1): Cannot unset string offsets in [/Applications/MAMP/htdocs/cakephp/lib/Cake/View/Helper/HtmlHelper.php, line 346]
+2013-09-29 23:44:49 Error: [FatalErrorException] Cannot unset string offsets
+Request URL: /cakephp/posts
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Cannot unset st...', '/Applications/M...', 346)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot unset st...', '/Applications/M...', 346, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot unset st...', '/Applications/M...', 346, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-30 00:25:22 Error: Fatal Error (4): syntax error, unexpected T_STRING, expecting T_FUNCTION in [/Applications/MAMP/htdocs/cakephp/app/Controller/PostsController.php, line 40]
+2013-09-30 00:25:22 Error: [FatalErrorException] syntax error, unexpected T_STRING, expecting T_FUNCTION
+Request URL: /cakephp/posts/edit/16
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 40)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 40, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 40, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-30 00:25:27 Error: Fatal Error (4): syntax error, unexpected T_STRING, expecting T_FUNCTION in [/Applications/MAMP/htdocs/cakephp/app/Controller/PostsController.php, line 40]
+2013-09-30 00:25:27 Error: [FatalErrorException] syntax error, unexpected T_STRING, expecting T_FUNCTION
+Request URL: /cakephp/posts/view/1
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 40)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 40, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 40, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-30 00:30:26 Error: Fatal Error (4): syntax error, unexpected T_STRING, expecting T_FUNCTION in [/Applications/MAMP/htdocs/cakephp/app/Controller/PostsController.php, line 40]
+2013-09-30 00:30:26 Error: [FatalErrorException] syntax error, unexpected T_STRING, expecting T_FUNCTION
+Request URL: /cakephp/posts/view/1
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 40)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 40, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 40, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-30 00:30:59 Error: Fatal Error (4): syntax error, unexpected ')', expecting '&' or T_VARIABLE in [/Applications/MAMP/htdocs/cakephp/app/Controller/PostsController.php, line 40]
+2013-09-30 00:30:59 Error: [FatalErrorException] syntax error, unexpected ')', expecting '&' or T_VARIABLE
+Request URL: /cakephp/posts/view/1
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 40)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 40, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 40, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-30 00:32:12 Error: Fatal Error (4): syntax error, unexpected T_NEW in [/Applications/MAMP/htdocs/cakephp/app/Controller/PostsController.php, line 42]
+2013-09-30 00:32:12 Error: [FatalErrorException] syntax error, unexpected T_NEW
+Request URL: /cakephp/posts/view/1
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 42)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 42, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 42, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-30 00:32:22 Error: Fatal Error (4): syntax error, unexpected '(', expecting T_STRING or T_VARIABLE or '{' or '$' in [/Applications/MAMP/htdocs/cakephp/app/Controller/PostsController.php, line 46]
+2013-09-30 00:32:22 Error: [FatalErrorException] syntax error, unexpected '(', expecting T_STRING or T_VARIABLE or '{' or '$'
+Request URL: /cakephp/posts/view/1
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 46)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 46, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 46, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-10-12 16:16:09 Error: [MissingControllerException] Controller class CakeController could not be found.
+Exception Attributes: array (
+  'class' => 'CakeController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/cake
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-12 16:16:23 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephp/posts/delete
+Stack Trace:
+#0 [internal function]: PostsController->delete()
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-10-12 16:16:28 Error: [MissingActionException] Action PostsController::del() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'del',
+)
+Request URL: /cakephp/posts/del
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-10-12 16:27:56 Error: [MissingControllerException] Controller class DisplayController could not be found.
+Exception Attributes: array (
+  'class' => 'DisplayController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/display
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-12 16:28:15 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/cakephp/app/View/Pages/display.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Applications/MAMP/htdocs/cakephp/app/View/Pages/display.ctp',
+)
+Request URL: /cakephp/pages/display
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName('display')
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(952): View->render('display', NULL)
+#2 /Applications/MAMP/htdocs/cakephp/app/Controller/PagesController.php(70): Controller->render('display')
+#3 [internal function]: PagesController->display('display')
+#4 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-10-13 15:45:45 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-13 15:45:48 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-13 15:46:20 Error: [MissingActionException] Action PostsController::display() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'display',
+)
+Request URL: /cakephp/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-10-13 15:46:22 Error: [MissingActionException] Action PostsController::display() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'display',
+)
+Request URL: /cakephp/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-10-13 15:47:02 Error: [MissingActionException] Action PostsController::display() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'display',
+)
+Request URL: /cakephp/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-10-13 15:47:04 Error: [MissingActionException] Action PostsController::display() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'display',
+)
+Request URL: /cakephp/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-10-13 15:47:10 Error: [MissingActionException] Action PostsController::display() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'display',
+)
+Request URL: /cakephp/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-10-13 15:47:16 Error: [MissingControllerException] Controller class AgesController could not be found.
+Exception Attributes: array (
+  'class' => 'AgesController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-10-13 17:15:44 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/cakephp/app/View/Posts/delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Applications/MAMP/htdocs/cakephp/app/View/Posts/delete.ctp',
+)
+Request URL: /cakephp/posts/delete/2
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-10-13 17:15:45 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/cakephp/app/View/Posts/delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Applications/MAMP/htdocs/cakephp/app/View/Posts/delete.ctp',
+)
+Request URL: /cakephp/posts/delete/2
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-10-13 17:15:48 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/cakephp/app/View/Posts/delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Applications/MAMP/htdocs/cakephp/app/View/Posts/delete.ctp',
+)
+Request URL: /cakephp/posts/delete/2
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-10-13 17:15:50 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephp/posts/delete/
+Stack Trace:
+#0 [internal function]: PostsController->delete()
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-03-18 14:34:08 Error: Fatal Error (4): syntax error, unexpected '}' in [/Applications/MAMP/htdocs/cakephp/app/Controller/PostsController.php, line 12]
+2014-03-18 14:34:08 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /cakephp/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 12, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 12, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-18 14:40:24 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/Applications/MAMP/htdocs/cakephp/app/Controller/PostsController.php, line 11]
+2014-03-18 14:40:24 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+Request URL: /cakephp/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 11)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 11, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 11, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-18 14:40:43 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/Applications/MAMP/htdocs/cakephp/app/Controller/PostsController.php, line 11]
+2014-03-18 14:40:43 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+Request URL: /cakephp/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 11)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 11, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 11, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-18 14:57:34 Error: Fatal Error (1): Call to undefined function vardump() in [/Applications/MAMP/htdocs/cakephp/app/View/Posts/index.ctp, line 2]
+2014-03-18 14:57:34 Error: [FatalErrorException] Call to undefined function vardump()
+Request URL: /cakephp/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/M...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/M...', 2, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/M...', 2, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-03-18 14:58:42 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/Applications/MAMP/htdocs/cakephp/app/Controller/PostsController.php, line 11]
+2014-03-18 14:58:42 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+Request URL: /cakephp/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 11)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 11, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 11, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-18 16:56:17 Error: Fatal Error (4): syntax error, unexpected ';', expecting T_STRING or T_VARIABLE or '{' or '$' in [/Applications/MAMP/htdocs/cakephp/app/Controller/PostsController.php, line 14]
+2014-05-18 16:56:17 Error: [FatalErrorException] syntax error, unexpected ';', expecting T_STRING or T_VARIABLE or '{' or '$'
+Request URL: /cakephp/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 14, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 14, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-18 18:07:06 Error: Fatal Error (4): syntax error, unexpected ';', expecting T_STRING or T_VARIABLE or '{' or '$' in [/Applications/MAMP/htdocs/cakephp/app/Controller/PostsController.php, line 14]
+2014-05-18 18:07:06 Error: [FatalErrorException] syntax error, unexpected ';', expecting T_STRING or T_VARIABLE or '{' or '$'
+Request URL: /cakephp/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 14, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 14, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-18 19:14:15 Error: Fatal Error (4): syntax error, unexpected ';', expecting T_STRING or T_VARIABLE or '{' or '$' in [/Applications/MAMP/htdocs/cakephp/app/Controller/PostsController.php, line 14]
+2014-05-18 19:14:15 Error: [FatalErrorException] syntax error, unexpected ';', expecting T_STRING or T_VARIABLE or '{' or '$'
+Request URL: /cakephp/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 14, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 14, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-19 19:13:23 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/cakephp/app/View/Events/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Applications/MAMP/htdocs/cakephp/app/View/Events/add.ctp',
+)
+Request URL: /cakephp/events/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(EventsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-05-20 01:37:24 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in [/Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php, line 48]
+2014-05-20 01:37:24 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE, expecting T_FUNCTION
+Request URL: /cakephp/users/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 48)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 48, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 48, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-20 01:37:53 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in [/Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php, line 48]
+2014-05-20 01:37:53 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE, expecting T_FUNCTION
+Request URL: /cakephp/users/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 48)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 48, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 48, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-20 01:38:13 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in [/Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php, line 63]
+2014-05-20 01:38:13 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE, expecting T_FUNCTION
+Request URL: /cakephp/users/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 63)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 63, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 63, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
