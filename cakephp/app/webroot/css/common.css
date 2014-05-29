@@ -1,0 +1,25 @@
+.radio{ float: left; }
+
+div .calender {
+width: 680px;
+float: left;
+margin-left: 15px;
+
+}
+
+div #sidebar {
+width: 400px;
+float: left;
+}
+
+div .main{
+border-left: 1px solid #666;
+}
+
+div .toppic{
+    font-size: 45px;
+    font-family: Futura, Century Gothic, myriad-pro-condensed-1, myriad-pro-condensed-2, 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+    text-align: center;
+    color: #e32;
+
+}
