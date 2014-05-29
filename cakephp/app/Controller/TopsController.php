@@ -36,20 +36,18 @@ class TopsController extends AppController{
                 }
             }
         }
-        $users = $this->TimeStart->User->find('list');
-        $this->set(compact('users'));
+        $users = $this->User->find('list');
+        $starts = $this->TimeStart->User->find('all',array(
+            ));
+        $ends = $this->TimeEnd->User->find('all');
+        $nowtime = date("Y-m-d H:i:s");
 
-        //学生の1日の出勤時間を表示するシステム
+        $this->set(compact('users','starts','ends','nowtime','test'));
+        //$count_start_times = $this ->
+        //$count_end_times =
+
+
     }
 
 
-    public function view($id = null){
-    }
-    public function add(){
-    }
-    public function edit($id = null){
-    }
-
-    public function delete($id){
-    }
 }

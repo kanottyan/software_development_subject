@@ -38,15 +38,35 @@
 </div>
 
 <div class="calender main">
-    <div class="toppic">本日の出勤状況</div>
+    <div class="toppic">最新の出勤状況</div>
+    <div class="toppic"><?php echo '現在時間：'.$nowtime ;?></div>
 
-<?php foreach ($users as $users){
-    echo "$users";
-}
+    <div class= "col3">
 
-?>
+        <div class= "column1">
+        <?php foreach ($users as $users) :?>
+            <?php echo $users; ?><br>
+        <?php endforeach; ?>
+        </div>
+
+        <div class= "column2">
+        <?php //出勤時間の取得?>
+        <?php foreach ($starts as $starts) :?>
+        <?php $last_time_in = count($starts['TimeStart'])-1 ?>
+        <?php echo $starts['TimeStart'][$last_time_in]['start'] ;?></br>
+        <?php endforeach; ?>
+        </div>
+
+        <div class= "column3">
+            <?php //退勤時間の取得?>
+            <?php foreach ($ends as $ends) :?>
+            <?php $last_time_out = count($starts['TimeStart'])-1 ?>
+            <?php echo $ends['TimeEnd'][$last_time_out]['end'] ;?></br>
+            <?php endforeach; ?>
+        </div>
+
+    </div>
 </div>
-
 
 
 <!--

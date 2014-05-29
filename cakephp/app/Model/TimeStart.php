@@ -35,6 +35,7 @@ class TimeStart extends AppModel {
 		),
 	);
 
+
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
 
 /**
@@ -51,4 +52,10 @@ class TimeStart extends AppModel {
 			'order' => ''
 		)
 	);
+	public function getUsersLastStart(){
+		$result = $this->find('all',array(
+				));
+		return $result;
+	}
+
 }

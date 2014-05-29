@@ -1736,3 +1736,695 @@ Request URL: /cakephp/time_stars
 Stack Trace:
 #0 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2014-05-29 18:43:18 Error: Fatal Error (4): syntax error, unexpected ')' in [/Applications/MAMP/htdocs/cakephp/app/Controller/TopsController.php, line 42]
+2014-05-29 18:43:18 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /cakephp/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 42)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 42, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 42, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-29 18:45:36 Error: Fatal Error (4): syntax error, unexpected '<' in [/Applications/MAMP/htdocs/cakephp/app/View/Tops/index.ctp, line 44]
+2014-05-29 18:45:36 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 44)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 44, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 44, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-30 00:07:40 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ggetLastEnter' at line 1
+Request URL: /cakephp/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('ggetLastEnter', Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('ggetLastEnter', Array, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('ggetLastEnter', Array, Array)
+#4 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(799): DboSource->query('ggetLastEnter', Array, Object(User))
+#5 /Applications/MAMP/htdocs/cakephp/app/Controller/TopsController.php(43): Model->__call('ggetLastEnter', Array)
+#6 /Applications/MAMP/htdocs/cakephp/app/Controller/TopsController.php(43): User->ggetLastEnter()
+#7 [internal function]: TopsController->index()
+#8 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TopsController), Array)
+#9 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(TopsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-05-30 00:58:05 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getLastEnter' at line 1
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('getLastEnter', Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getLastEnter', Array, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('getLastEnter', Array, Array)
+#4 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(799): DboSource->query('getLastEnter', Array, Object(User))
+#5 /Applications/MAMP/htdocs/cakephp/app/Controller/TopsController.php(43): Model->__call('getLastEnter', Array)
+#6 /Applications/MAMP/htdocs/cakephp/app/Controller/TopsController.php(43): User->getLastEnter()
+#7 [internal function]: TopsController->index()
+#8 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TopsController), Array)
+#9 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(TopsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-05-30 01:10:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/css/cake.generic.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-05-30 01:10:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/css/common.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-05-30 01:20:55 Error: Fatal Error (4): syntax error, unexpected ';' in [/Applications/MAMP/htdocs/cakephp/app/View/Tops/index.ctp, line 47]
+2014-05-30 01:20:55 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 47)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 47, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 47, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-30 01:32:20 Error: Fatal Error (4): syntax error, unexpected T_PUBLIC in [/Applications/MAMP/htdocs/cakephp/app/Model/AppModel.php, line 36]
+2014-05-30 01:32:20 Error: [FatalErrorException] syntax error, unexpected T_PUBLIC
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 36)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 36, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 36, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-30 01:36:45 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.end' in 'field list'
+Request URL: /cakephp/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(2750): DboSource->read(Object(User), Array)
+#5 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(2722): Model->_readDataSource('all', Array)
+#6 /Applications/MAMP/htdocs/cakephp/app/Controller/TopsController.php(43): Model->find('all', Array)
+#7 [internal function]: TopsController->index()
+#8 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TopsController), Array)
+#9 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(TopsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-05-30 02:13:17 Error: Fatal Error (4): syntax error, unexpected ';' in [/Applications/MAMP/htdocs/cakephp/app/Model/TimeStart.php, line 59]
+2014-05-30 02:13:17 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 59)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 59, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 59, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-30 02:13:33 Error: Fatal Error (4): syntax error, unexpected ';' in [/Applications/MAMP/htdocs/cakephp/app/Model/TimeStart.php, line 59]
+2014-05-30 02:13:33 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 59)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 59, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 59, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-30 02:22:38 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'TimeStart.start' in 'field list'
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `User`.*...', Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `User`.*...', Array, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `User`.*...', false)
+#4 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(2750): DboSource->read(Object(User), Array)
+#5 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(2722): Model->_readDataSource('all', Array)
+#6 /Applications/MAMP/htdocs/cakephp/app/Model/User.php(103): Model->find('all', Array)
+#7 /Applications/MAMP/htdocs/cakephp/app/Controller/TopsController.php(40): User->getUsersLastStart()
+#8 [internal function]: TopsController->index()
+#9 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TopsController), Array)
+#10 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(TopsController), Object(CakeRequest), Object(CakeResponse))
+#12 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-05-30 02:23:18 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'TimeStart.start' in 'field list'
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `User`.*...', Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `User`.*...', Array, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `User`.*...', false)
+#4 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(2750): DboSource->read(Object(User), Array)
+#5 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(2722): Model->_readDataSource('all', Array)
+#6 /Applications/MAMP/htdocs/cakephp/app/Model/User.php(88): Model->find('all', Array)
+#7 /Applications/MAMP/htdocs/cakephp/app/Controller/TopsController.php(40): User->getUsersLastStart()
+#8 [internal function]: TopsController->index()
+#9 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TopsController), Array)
+#10 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(TopsController), Object(CakeRequest), Object(CakeResponse))
+#12 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-05-30 02:27:05 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getUsersLastStart' at line 1
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('getUsersLastSta...', Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getUsersLastSta...', Array, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('getUsersLastSta...', Array, Array)
+#4 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(799): DboSource->query('getUsersLastSta...', Array, Object(User))
+#5 /Applications/MAMP/htdocs/cakephp/app/Controller/TopsController.php(40): Model->__call('getUsersLastSta...', Array)
+#6 /Applications/MAMP/htdocs/cakephp/app/Controller/TopsController.php(40): User->getUsersLastStart()
+#7 [internal function]: TopsController->index()
+#8 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TopsController), Array)
+#9 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(TopsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-05-30 02:27:25 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getLastEnter' at line 1
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('getLastEnter', Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getLastEnter', Array, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('getLastEnter', Array, Array)
+#4 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(799): DboSource->query('getLastEnter', Array, Object(User))
+#5 /Applications/MAMP/htdocs/cakephp/app/Controller/TopsController.php(43): Model->__call('getLastEnter', Array)
+#6 /Applications/MAMP/htdocs/cakephp/app/Controller/TopsController.php(43): User->getLastEnter()
+#7 [internal function]: TopsController->index()
+#8 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TopsController), Array)
+#9 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(TopsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-05-30 02:27:46 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getLastEnter' at line 1
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('getLastEnter', Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getLastEnter', Array, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('getLastEnter', Array, Array)
+#4 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(799): DboSource->query('getLastEnter', Array, Object(User))
+#5 /Applications/MAMP/htdocs/cakephp/app/Controller/TopsController.php(43): Model->__call('getLastEnter', Array)
+#6 /Applications/MAMP/htdocs/cakephp/app/Controller/TopsController.php(43): User->getLastEnter()
+#7 [internal function]: TopsController->index()
+#8 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TopsController), Array)
+#9 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(TopsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-05-30 02:34:50 Error: Fatal Error (1): Call to a member function getUsersLastStart() on a non-object in [/Applications/MAMP/htdocs/cakephp/app/Controller/TopsController.php, line 40]
+2014-05-30 02:34:50 Error: [FatalErrorException] Call to a member function getUsersLastStart() on a non-object
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/M...', 40)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/M...', 40, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/M...', 40, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-30 02:34:59 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'TimeStart.start' in 'field list'
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `User`.*...', Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `User`.*...', Array, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `User`.*...', false)
+#4 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(2750): DboSource->read(Object(User), Array)
+#5 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(2722): Model->_readDataSource('all', Array)
+#6 /Applications/MAMP/htdocs/cakephp/app/Model/User.php(87): Model->find('all', Array)
+#7 /Applications/MAMP/htdocs/cakephp/app/Controller/TopsController.php(40): User->getUsersLastStart()
+#8 [internal function]: TopsController->index()
+#9 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TopsController), Array)
+#10 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(TopsController), Object(CakeRequest), Object(CakeResponse))
+#12 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-05-30 02:35:38 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'TimeStart.start' in 'field list'
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `User`.*...', Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `User`.*...', Array, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `User`.*...', false)
+#4 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(2750): DboSource->read(Object(User), Array)
+#5 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(2722): Model->_readDataSource('all', Array)
+#6 /Applications/MAMP/htdocs/cakephp/app/Model/User.php(87): Model->find('all', Array)
+#7 /Applications/MAMP/htdocs/cakephp/app/Controller/TopsController.php(40): User->getUsersLastStart()
+#8 [internal function]: TopsController->index()
+#9 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TopsController), Array)
+#10 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(TopsController), Object(CakeRequest), Object(CakeResponse))
+#12 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-05-30 02:42:57 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'TimeStart.start' in 'field list'
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `User`.*...', Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `User`.*...', Array, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `User`.*...', false)
+#4 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(2750): DboSource->read(Object(User), Array)
+#5 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(2722): Model->_readDataSource('all', Array)
+#6 /Applications/MAMP/htdocs/cakephp/app/Model/User.php(90): Model->find('all', Array)
+#7 /Applications/MAMP/htdocs/cakephp/app/Controller/TopsController.php(40): User->getUsersLastStart()
+#8 [internal function]: TopsController->index()
+#9 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TopsController), Array)
+#10 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(TopsController), Object(CakeRequest), Object(CakeResponse))
+#12 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-05-30 02:44:31 Error: Fatal Error (4): syntax error, unexpected ';' in [/Applications/MAMP/htdocs/cakephp/app/Model/User.php, line 97]
+2014-05-30 02:44:31 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 97)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 97, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 97, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-30 02:44:37 Error: Fatal Error (4): syntax error, unexpected ';' in [/Applications/MAMP/htdocs/cakephp/app/Model/User.php, line 97]
+2014-05-30 02:44:37 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 97)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 97, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 97, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-30 02:46:07 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'time_starts TimeStart TimeStart.user_id = User.id  WHERE 1 = 1' at line 1
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `User`.*...', Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `User`.*...', Array, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `User`.*...', false)
+#4 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(2750): DboSource->read(Object(User), Array)
+#5 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(2722): Model->_readDataSource('all', Array)
+#6 /Applications/MAMP/htdocs/cakephp/app/Model/User.php(95): Model->find('all', Array)
+#7 /Applications/MAMP/htdocs/cakephp/app/Controller/TopsController.php(40): User->getUsersLastStart()
+#8 [internal function]: TopsController->index()
+#9 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TopsController), Array)
+#10 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(TopsController), Object(CakeRequest), Object(CakeResponse))
+#12 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-05-30 02:47:09 Error: Fatal Error (4): syntax error, unexpected ';' in [/Applications/MAMP/htdocs/cakephp/app/Model/User.php, line 97]
+2014-05-30 02:47:09 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 97)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 97, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 97, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-30 02:58:27 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'time_starts TimeStart TimeStart.user_id = User.id  WHERE 1 = 1' at line 1
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `TimeSta...', Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `TimeSta...', Array, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `TimeSta...', false)
+#4 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(2750): DboSource->read(Object(User), Array)
+#5 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(2722): Model->_readDataSource('all', Array)
+#6 /Applications/MAMP/htdocs/cakephp/app/Model/User.php(95): Model->find('all', Array)
+#7 /Applications/MAMP/htdocs/cakephp/app/Controller/TopsController.php(40): User->getUsersLastStart()
+#8 [internal function]: TopsController->index()
+#9 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TopsController), Array)
+#10 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(TopsController), Object(CakeRequest), Object(CakeResponse))
+#12 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-05-30 03:00:04 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'time_starts TimeStart User.id = TimeStart.user_id  WHERE 1 = 1' at line 1
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `User`.*...', Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `User`.*...', Array, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `User`.*...', false)
+#4 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(2750): DboSource->read(Object(User), Array)
+#5 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(2722): Model->_readDataSource('all', Array)
+#6 /Applications/MAMP/htdocs/cakephp/app/Model/User.php(95): Model->find('all', Array)
+#7 /Applications/MAMP/htdocs/cakephp/app/Controller/TopsController.php(40): User->getUsersLastStart()
+#8 [internal function]: TopsController->index()
+#9 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TopsController), Array)
+#10 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(TopsController), Object(CakeRequest), Object(CakeResponse))
+#12 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-05-30 03:03:10 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'TimeStart.start' in 'field list'
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `User`.*...', Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `User`.*...', Array, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `User`.*...', false)
+#4 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(2750): DboSource->read(Object(User), Array)
+#5 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(2722): Model->_readDataSource('all', Array)
+#6 /Applications/MAMP/htdocs/cakephp/app/Model/User.php(91): Model->find('all', Array)
+#7 /Applications/MAMP/htdocs/cakephp/app/Controller/TopsController.php(40): User->getUsersLastStart()
+#8 [internal function]: TopsController->index()
+#9 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TopsController), Array)
+#10 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(TopsController), Object(CakeRequest), Object(CakeResponse))
+#12 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-05-30 03:03:48 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'TimeStart.start' in 'field list'
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `TimeSta...', Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `TimeSta...', Array, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `TimeSta...', false)
+#4 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(2750): DboSource->read(Object(User), Array)
+#5 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(2722): Model->_readDataSource('all', Array)
+#6 /Applications/MAMP/htdocs/cakephp/app/Model/User.php(90): Model->find('all', Array)
+#7 /Applications/MAMP/htdocs/cakephp/app/Controller/TopsController.php(40): User->getUsersLastStart()
+#8 [internal function]: TopsController->index()
+#9 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TopsController), Array)
+#10 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(TopsController), Object(CakeRequest), Object(CakeResponse))
+#12 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-05-30 03:10:22 Error: Fatal Error (4): syntax error, unexpected ';' in [/Applications/MAMP/htdocs/cakephp/app/View/Tops/index.ctp, line 45]
+2014-05-30 03:10:22 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 45)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 45, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 45, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-30 03:10:29 Error: Fatal Error (4): syntax error, unexpected ';' in [/Applications/MAMP/htdocs/cakephp/app/View/Tops/index.ctp, line 46]
+2014-05-30 03:10:29 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 46)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 46, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 46, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-30 03:10:32 Error: Fatal Error (4): syntax error, unexpected ';' in [/Applications/MAMP/htdocs/cakephp/app/View/Tops/index.ctp, line 46]
+2014-05-30 03:10:32 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 46)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 46, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 46, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-30 03:10:37 Error: Fatal Error (4): syntax error, unexpected ';' in [/Applications/MAMP/htdocs/cakephp/app/View/Tops/index.ctp, line 46]
+2014-05-30 03:10:37 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 46)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 46, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 46, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-30 03:10:57 Error: Fatal Error (4): syntax error, unexpected ';' in [/Applications/MAMP/htdocs/cakephp/app/View/Tops/index.ctp, line 45]
+2014-05-30 03:10:57 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 45)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 45, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 45, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-30 03:11:12 Error: Fatal Error (4): syntax error, unexpected ';' in [/Applications/MAMP/htdocs/cakephp/app/View/Tops/index.ctp, line 45]
+2014-05-30 03:11:12 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 45)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 45, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 45, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-30 03:18:59 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getUsersLastStart' at line 1
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('getUsersLastSta...', Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getUsersLastSta...', Array, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('getUsersLastSta...', Array, Array)
+#4 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(799): DboSource->query('getUsersLastSta...', Array, Object(User))
+#5 /Applications/MAMP/htdocs/cakephp/app/Controller/TopsController.php(40): Model->__call('getUsersLastSta...', Array)
+#6 /Applications/MAMP/htdocs/cakephp/app/Controller/TopsController.php(40): User->getUsersLastStart()
+#7 [internal function]: TopsController->index()
+#8 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TopsController), Array)
+#9 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(TopsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-05-30 03:20:29 Error: Fatal Error (1): Cannot use string offset as an array in [/Applications/MAMP/htdocs/cakephp/app/View/Tops/index.ctp, line 49]
+2014-05-30 03:20:29 Error: [FatalErrorException] Cannot use string offset as an array
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Cannot use stri...', '/Applications/M...', 49)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use stri...', '/Applications/M...', 49, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot use stri...', '/Applications/M...', 49, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-30 03:20:48 Error: Fatal Error (1): Cannot use string offset as an array in [/Applications/MAMP/htdocs/cakephp/app/View/Tops/index.ctp, line 49]
+2014-05-30 03:20:48 Error: [FatalErrorException] Cannot use string offset as an array
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Cannot use stri...', '/Applications/M...', 49)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use stri...', '/Applications/M...', 49, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot use stri...', '/Applications/M...', 49, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-30 03:20:55 Error: Fatal Error (4): syntax error, unexpected ';' in [/Applications/MAMP/htdocs/cakephp/app/View/Tops/index.ctp, line 49]
+2014-05-30 03:20:55 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 49)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 49, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 49, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-30 03:21:03 Error: Fatal Error (4): syntax error, unexpected ';' in [/Applications/MAMP/htdocs/cakephp/app/View/Tops/index.ctp, line 50]
+2014-05-30 03:21:03 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 50)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 50, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 50, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-30 03:21:22 Error: Fatal Error (4): syntax error, unexpected ';' in [/Applications/MAMP/htdocs/cakephp/app/View/Tops/index.ctp, line 51]
+2014-05-30 03:21:22 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 51)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 51, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 51, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-30 03:21:31 Error: Fatal Error (4): syntax error, unexpected ';' in [/Applications/MAMP/htdocs/cakephp/app/View/Tops/index.ctp, line 51]
+2014-05-30 03:21:31 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 51)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 51, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 51, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-30 03:23:06 Error: Fatal Error (64): Cannot use [] for reading in [/Applications/MAMP/htdocs/cakephp/app/View/Tops/index.ctp, line 52]
+2014-05-30 03:23:06 Error: [FatalErrorException] Cannot use [] for reading
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(64, 'Cannot use [] f...', '/Applications/M...', 52)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot use [] f...', '/Applications/M...', 52, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot use [] f...', '/Applications/M...', 52, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-30 03:23:07 Error: Fatal Error (64): Cannot use [] for reading in [/Applications/MAMP/htdocs/cakephp/app/View/Tops/index.ctp, line 52]
+2014-05-30 03:23:07 Error: [FatalErrorException] Cannot use [] for reading
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(64, 'Cannot use [] f...', '/Applications/M...', 52)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot use [] f...', '/Applications/M...', 52, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot use [] f...', '/Applications/M...', 52, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-30 03:23:07 Error: Fatal Error (64): Cannot use [] for reading in [/Applications/MAMP/htdocs/cakephp/app/View/Tops/index.ctp, line 52]
+2014-05-30 03:23:07 Error: [FatalErrorException] Cannot use [] for reading
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(64, 'Cannot use [] f...', '/Applications/M...', 52)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot use [] f...', '/Applications/M...', 52, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot use [] f...', '/Applications/M...', 52, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-30 03:23:08 Error: Fatal Error (64): Cannot use [] for reading in [/Applications/MAMP/htdocs/cakephp/app/View/Tops/index.ctp, line 52]
+2014-05-30 03:23:08 Error: [FatalErrorException] Cannot use [] for reading
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(64, 'Cannot use [] f...', '/Applications/M...', 52)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot use [] f...', '/Applications/M...', 52, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot use [] f...', '/Applications/M...', 52, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-30 03:23:10 Error: Fatal Error (64): Cannot use [] for reading in [/Applications/MAMP/htdocs/cakephp/app/View/Tops/index.ctp, line 52]
+2014-05-30 03:23:10 Error: [FatalErrorException] Cannot use [] for reading
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(64, 'Cannot use [] f...', '/Applications/M...', 52)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot use [] f...', '/Applications/M...', 52, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot use [] f...', '/Applications/M...', 52, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-30 03:30:36 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE, expecting ',' or ';' in [/Applications/MAMP/htdocs/cakephp/app/View/Tops/index.ctp, line 54]
+2014-05-30 03:30:36 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE, expecting ',' or ';'
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 54)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 54, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 54, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-30 03:34:07 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'TimeStart.created' in 'order clause'
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(2750): DboSource->read(Object(User), Array)
+#5 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(2722): Model->_readDataSource('all', Array)
+#6 /Applications/MAMP/htdocs/cakephp/app/Controller/TopsController.php(42): Model->find('all', Array)
+#7 [internal function]: TopsController->index()
+#8 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TopsController), Array)
+#9 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(TopsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-05-30 03:34:37 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'TimeStart.created' in 'order clause'
+Request URL: /cakephp/tops
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(2750): DboSource->read(Object(User), Array)
+#5 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(2722): Model->_readDataSource('all', Array)
+#6 /Applications/MAMP/htdocs/cakephp/app/Controller/TopsController.php(42): Model->find('all', Array)
+#7 [internal function]: TopsController->index()
+#8 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TopsController), Array)
+#9 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(TopsController), Object(CakeRequest), Object(CakeResponse))
+#11 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-05-30 03:49:09 Error: Fatal Error (64): Cannot use [] for reading in [/Applications/MAMP/htdocs/cakephp/app/View/Tops/index.ctp, line 50]
+2014-05-30 03:49:09 Error: [FatalErrorException] Cannot use [] for reading
+Request URL: /cakephp/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(64, 'Cannot use [] f...', '/Applications/M...', 50)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot use [] f...', '/Applications/M...', 50, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot use [] f...', '/Applications/M...', 50, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-30 03:49:09 Error: Fatal Error (64): Cannot use [] for reading in [/Applications/MAMP/htdocs/cakephp/app/View/Tops/index.ctp, line 50]
+2014-05-30 03:49:09 Error: [FatalErrorException] Cannot use [] for reading
+Request URL: /cakephp/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(64, 'Cannot use [] f...', '/Applications/M...', 50)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot use [] f...', '/Applications/M...', 50, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot use [] f...', '/Applications/M...', 50, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-30 03:49:10 Error: Fatal Error (64): Cannot use [] for reading in [/Applications/MAMP/htdocs/cakephp/app/View/Tops/index.ctp, line 50]
+2014-05-30 03:49:10 Error: [FatalErrorException] Cannot use [] for reading
+Request URL: /cakephp/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(64, 'Cannot use [] f...', '/Applications/M...', 50)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot use [] f...', '/Applications/M...', 50, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot use [] f...', '/Applications/M...', 50, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-30 03:49:11 Error: Fatal Error (64): Cannot use [] for reading in [/Applications/MAMP/htdocs/cakephp/app/View/Tops/index.ctp, line 50]
+2014-05-30 03:49:11 Error: [FatalErrorException] Cannot use [] for reading
+Request URL: /cakephp/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(64, 'Cannot use [] f...', '/Applications/M...', 50)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot use [] f...', '/Applications/M...', 50, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot use [] f...', '/Applications/M...', 50, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-30 03:49:23 Error: Fatal Error (4): syntax error, unexpected ')', expecting T_VARIABLE or '$' in [/Applications/MAMP/htdocs/cakephp/app/View/Tops/index.ctp, line 50]
+2014-05-30 03:49:23 Error: [FatalErrorException] syntax error, unexpected ')', expecting T_VARIABLE or '$'
+Request URL: /cakephp/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 50)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 50, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 50, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-30 03:50:54 Error: Fatal Error (4): syntax error, unexpected '}' in [/Applications/MAMP/htdocs/cakephp/app/Controller/TopsController.php, line 50]
+2014-05-30 03:50:54 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /cakephp/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 50)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 50, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 50, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-30 03:53:35 Error: Fatal Error (4): syntax error, unexpected ']' in [/Applications/MAMP/htdocs/cakephp/app/View/Tops/index.ctp, line 49]
+2014-05-30 03:53:35 Error: [FatalErrorException] syntax error, unexpected ']'
+Request URL: /cakephp/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 49)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 49, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 49, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-05-30 03:53:42 Error: Fatal Error (4): syntax error, unexpected ';' in [/Applications/MAMP/htdocs/cakephp/app/View/Tops/index.ctp, line 49]
+2014-05-30 03:53:42 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cakephp/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 49)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 49, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 49, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

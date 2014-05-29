@@ -13,6 +13,9 @@ class User extends AppModel {
  *
  * @var array
  */
+
+	public $name = 'User';
+
 	public $validate = array(
 		'name' => array(
 			'notEmpty' => array(
