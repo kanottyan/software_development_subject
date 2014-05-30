@@ -29,7 +29,8 @@
     </div>
 
     <div class="config">
-        編集画面へ
+    編集画面へ
+    <li><?php echo $this->Html->link(__('新規学生登録'), array('controller' => 'users', 'action' => 'add')); ?> </li>
     <li><?php echo $this->Html->link(__('学生の編集'), array('controller' => 'users', 'action' => 'index')); ?> </li>
     <li><?php echo $this->Html->link(__('出勤時間の編集'), array('controller' => 'time_starts', 'action' => 'index')); ?> </li>
     <li><?php echo $this->Html->link(__('退勤の編集'), array('controller' => 'time_ends', 'action' => 'index')); ?> </li>
@@ -39,35 +40,52 @@
 
 <div class="calender main">
     <div class="toppic">最新の出勤状況</div>
-    <div class="toppic"><?php echo '現在時間：'.$nowtime ;?></div>
+    <div class="now_time"><?php echo '現在時間：'.$nowtime ;?></div>
 
-    <div class= "col3">
+    <div class= "stats">
+        <table border="1">
+        <tr>
+            <th>名前</th>
+            <th>出勤時間</th>
+            <th>退勤時間</th>
+        </tr>
 
-        <div class= "column1">
-        <?php foreach ($users as $users) :?>
-            <?php echo $users; ?><br>
-        <?php endforeach; ?>
-        </div>
+            <?php $time_start_array = array();?>
+            <?php $time_end_array = array(); ?>
 
-        <div class= "column2">
-        <?php //出勤時間の取得?>
-        <?php foreach ($starts as $starts) :?>
-        <?php $last_time_in = count($starts['TimeStart'])-1 ?>
-        <?php echo $starts['TimeStart'][$last_time_in]['start'] ;?></br>
-        <?php endforeach; ?>
-        </div>
-
-        <div class= "column3">
-            <?php //退勤時間の取得?>
-            <?php foreach ($ends as $ends) :?>
-            <?php $last_time_out = count($starts['TimeStart'])-1 ?>
-            <?php echo $ends['TimeEnd'][$last_time_out]['end'] ;?></br>
+            <?php //出勤時間の取得（要リファクタリング）?>
+            <?php foreach ($starts as $starts) :?>
+                <?php $last_time_in = count($starts['TimeStart'])-1 ?>
+                <?php if( empty($starts['TimeStart'])){
+                array_push($time_start_array,"未登録");
+            }else{
+                array_push($time_start_array,$starts['TimeStart'][$last_time_in]['start']);
+            }?>
             <?php endforeach; ?>
-        </div>
 
+            <?php //退勤時間の取得（要リファクタリング）?>
+            <?php foreach ($ends as $ends) :?>
+                <?php $last_time_out = count($ends['TimeEnd'])-1 ?>
+                <?php if( empty($ends['TimeEnd'])){
+                array_push($time_end_array,"未登録");
+            }else{
+                array_push($time_end_array,$ends['TimeEnd'][$last_time_out]['end']);
+            } ?>
+            <?php endforeach; ?>
+
+            <?php //データを表示?>
+            <?php foreach ($users as $key => $users) :?>
+                <tr>
+                    <td><?php echo $users ;?></td>
+                    <td><?php echo $time_start_array[$key-1] ;?></td>
+                    <td><?php echo $time_end_array[$key-1]; ?></td>
+                </tr>
+
+            <?php endforeach; ?>
+
+        </table>
     </div>
 </div>
-
 
 <!--
 <div class="actions">

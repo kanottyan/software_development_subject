@@ -14,6 +14,7 @@ float: left;
 
 div .main{
 border-left: 1px solid #666;
+height : 700px;
 }
 
 div .toppic{
@@ -22,4 +23,18 @@ div .toppic{
     text-align: center;
     color: #e32;
 
+}
+
+.now_time{
+    font-size: 20px;
+    font-family: Futura, Century Gothic, myriad-pro-condensed-1, myriad-pro-condensed-2, 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+    text-align: center;
+}
+
+.stats{
+    padding-left:20px;
+}
+
+table {
+    border-right: 1px solid !important;
 }
