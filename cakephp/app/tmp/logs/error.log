@@ -2428,3 +2428,39 @@ Stack Trace:
 #3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2014-05-30 10:59:27 Error: [MissingControllerException] Controller class CakephpController could not be found.
+Exception Attributes: array (
+  'class' => 'CakephpController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/css/common.css
+Stack Trace:
+#0 /Users/kano/workspace/software_development_subject/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-05-30 10:59:40 Error: [MissingControllerException] Controller class CakephpController could not be found.
+Exception Attributes: array (
+  'class' => 'CakephpController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/css/common.css
+Stack Trace:
+#0 /Users/kano/workspace/software_development_subject/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-05-30 11:16:10 Error: [MissingControllerException] Controller class CakephpController could not be found.
+Exception Attributes: array (
+  'class' => 'CakephpController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/css/common.css
+Stack Trace:
+#0 /Users/kano/workspace/software_development_subject/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-05-30 11:22:23 Error: [MissingControllerException] Controller class CakephpController could not be found.
+Exception Attributes: array (
+  'class' => 'CakephpController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/css/common.css
+Stack Trace:
+#0 /Users/kano/workspace/software_development_subject/cakephp/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

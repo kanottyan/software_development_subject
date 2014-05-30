@@ -23,7 +23,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="/cakephp/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="/css/common.css" />
 	<?php echo $this->Html->charset(); ?>
 	<title>
 		<?php echo $title_for_layout; ?>
