@@ -2,8 +2,6 @@
 /**
  * IniReader
  *
- * PHP 5
- *
  * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
  * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
  *
@@ -96,7 +94,6 @@ class IniReader implements ConfigReaderInterface {
  * @return array Parsed configuration values.
  * @throws ConfigureException when files don't exist.
  *  Or when files contain '..' as this could lead to abusive reads.
- * @throws ConfigureException
  */
 	public function read($key) {
 		if (strpos($key, '..') !== false) {

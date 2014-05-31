@@ -2,8 +2,6 @@
 /**
  * MS SQL Server layer for DBO
  *
- * PHP 5
- *
  * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
  * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
  *
@@ -80,6 +78,7 @@ class Sqlserver extends DboSource {
 		'password' => '',
 		'database' => 'cake',
 		'schema' => '',
+		'flags' => array()
 	);
 
 /**
@@ -93,7 +92,10 @@ class Sqlserver extends DboSource {
 		'text' => array('name' => 'nvarchar', 'limit' => 'MAX'),
 		'integer' => array('name' => 'int', 'formatter' => 'intval'),
 		'biginteger' => array('name' => 'bigint'),
-		'float' => array('name' => 'numeric', 'formatter' => 'floatval'),
+		'numeric' => array('name' => 'decimal', 'formatter' => 'floatval'),
+		'decimal' => array('name' => 'decimal', 'formatter' => 'floatval'),
+		'float' => array('name' => 'float', 'formatter' => 'floatval'),
+		'real' => array('name' => 'float', 'formatter' => 'floatval'),
 		'datetime' => array('name' => 'datetime', 'format' => 'Y-m-d H:i:s', 'formatter' => 'date'),
 		'timestamp' => array('name' => 'timestamp', 'format' => 'Y-m-d H:i:s', 'formatter' => 'date'),
 		'time' => array('name' => 'datetime', 'format' => 'H:i:s', 'formatter' => 'date'),
@@ -105,6 +107,8 @@ class Sqlserver extends DboSource {
 /**
  * Magic column name used to provide pagination support for SQLServer 2008
  * which lacks proper limit/offset support.
+ *
+ * @var string
  */
 	const ROW_COUNTER = '_cake_page_rownum_';
 
@@ -118,7 +122,7 @@ class Sqlserver extends DboSource {
 		$config = $this->config;
 		$this->connected = false;
 
-		$flags = array(
+		$flags = $config['flags'] + array(
 			PDO::ATTR_PERSISTENT => $config['persistent'],
 			PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
 		);
@@ -195,25 +199,30 @@ class Sqlserver extends DboSource {
  * @throws CakeException
  */
 	public function describe($model) {
-		$table = $this->fullTableName($model, false);
-		$cache = parent::describe($table);
+		$table = $this->fullTableName($model, false, false);
+		$fulltable = $this->fullTableName($model, false, true);
+
+		$cache = parent::describe($fulltable);
 		if ($cache) {
 			return $cache;
 		}
+
 		$fields = array();
-		$table = $this->fullTableName($model, false);
+		$schema = is_object($model) ? $model->schemaName : false;
+
 		$cols = $this->_execute(
 			"SELECT
 				COLUMN_NAME as Field,
 				DATA_TYPE as Type,
-				COL_LENGTH('" . $table . "', COLUMN_NAME) as Length,
+				COL_LENGTH('" . ($schema ? $fulltable : $table) . "', COLUMN_NAME) as Length,
 				IS_NULLABLE As [Null],
 				COLUMN_DEFAULT as [Default],
-				COLUMNPROPERTY(OBJECT_ID('" . $table . "'), COLUMN_NAME, 'IsIdentity') as [Key],
+				COLUMNPROPERTY(OBJECT_ID('" . ($schema ? $fulltable : $table) . "'), COLUMN_NAME, 'IsIdentity') as [Key],
 				NUMERIC_SCALE as Size
 			FROM INFORMATION_SCHEMA.COLUMNS
-			WHERE TABLE_NAME = '" . $table . "'"
+			WHERE TABLE_NAME = '" . $table . "'" . ($schema ? " AND TABLE_SCHEMA = '" . $schema . "'" : '')
 		);
+
 		if (!$cols) {
 			throw new CakeException(__d('cake_dev', 'Could not describe table for %s', $table));
 		}
@@ -278,7 +287,7 @@ class Sqlserver extends DboSource {
 			for ($i = 0; $i < $count; $i++) {
 				$prepend = '';
 
-				if (strpos($fields[$i], 'DISTINCT') !== false) {
+				if (strpos($fields[$i], 'DISTINCT') !== false && strpos($fields[$i], 'COUNT') === false) {
 					$prepend = 'DISTINCT ';
 					$fields[$i] = trim(str_replace('DISTINCT', '', $fields[$i]));
 				}
@@ -441,8 +450,11 @@ class Sqlserver extends DboSource {
 		if (strpos($col, 'binary') !== false || $col === 'image') {
 			return 'binary';
 		}
-		if (in_array($col, array('float', 'real', 'decimal', 'numeric'))) {
+		if (in_array($col, array('float', 'real'))) {
 			return 'float';
+		}
+		if (in_array($col, array('decimal', 'numeric'))) {
+			return 'decimal';
 		}
 		return 'text';
 	}
@@ -530,19 +542,19 @@ class Sqlserver extends DboSource {
 					$offset = intval($limitOffset[2] * $page);
 
 					$rowCounter = self::ROW_COUNTER;
-					return "
-						SELECT {$limit} * FROM (
+					$sql = "SELECT {$limit} * FROM (
 							SELECT {$fields}, ROW_NUMBER() OVER ({$order}) AS {$rowCounter}
 							FROM {$table} {$alias} {$joins} {$conditions} {$group}
 						) AS _cake_paging_
 						WHERE _cake_paging_.{$rowCounter} > {$offset}
 						ORDER BY _cake_paging_.{$rowCounter}
 					";
+					return trim($sql);
 				}
 				if (strpos($limit, 'FETCH') !== false) {
-					return "SELECT {$fields} FROM {$table} {$alias} {$joins} {$conditions} {$group} {$order} {$limit}";
+					return trim("SELECT {$fields} FROM {$table} {$alias} {$joins} {$conditions} {$group} {$order} {$limit}");
 				}
-				return "SELECT {$limit} {$fields} FROM {$table} {$alias} {$joins} {$conditions} {$group} {$order}";
+				return trim("SELECT {$limit} {$fields} FROM {$table} {$alias} {$joins} {$conditions} {$group} {$order}");
 			case "schema":
 				extract($data);
 
@@ -558,7 +570,7 @@ class Sqlserver extends DboSource {
 						${$var} = "\t" . implode(",\n\t", array_filter(${$var}));
 					}
 				}
-				return "CREATE TABLE {$table} (\n{$columns});\n{$indexes}";
+				return trim("CREATE TABLE {$table} (\n{$columns});\n{$indexes}");
 			default:
 				return parent::renderStatement($type, $data);
 		}
@@ -599,7 +611,7 @@ class Sqlserver extends DboSource {
  * @param Model $model
  * @param array $queryData
  * @param integer $recursive
- * @return array Array of resultset rows, or false if no rows matched
+ * @return array|false Array of resultset rows, or false if no rows matched
  */
 	public function read(Model $model, $queryData = array(), $recursive = null) {
 		$results = parent::read($model, $queryData, $recursive);
@@ -676,7 +688,7 @@ class Sqlserver extends DboSource {
 			} else {
 				$result = str_replace('DEFAULT NULL', 'NULL', $result);
 			}
-		} elseif (array_keys($column) == array('type', 'name')) {
+		} elseif (array_keys($column) === array('type', 'name')) {
 			$result .= ' NULL';
 		} elseif (strpos($result, "DEFAULT N'")) {
 			$result = str_replace("DEFAULT N'", "DEFAULT '", $result);
@@ -755,6 +767,7 @@ class Sqlserver extends DboSource {
  */
 	protected function _execute($sql, $params = array(), $prepareOptions = array()) {
 		$this->_lastAffected = false;
+		$sql = trim($sql);
 		if (strncasecmp($sql, 'SELECT', 6) === 0 || preg_match('/^EXEC(?:UTE)?\s/mi', $sql) > 0) {
 			$prepareOptions += array(PDO::ATTR_CURSOR => PDO::CURSOR_SCROLL);
 			return parent::_execute($sql, $params, $prepareOptions);

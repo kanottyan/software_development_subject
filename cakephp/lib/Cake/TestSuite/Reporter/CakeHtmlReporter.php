@@ -2,8 +2,6 @@
 /**
  * CakeHtmlReporter
  *
- * PHP 5
- *
  * CakePHP(tm) Tests <http://book.cakephp.org/2.0/en/development/testing.html>
  * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
  *
@@ -266,7 +264,7 @@ class CakeHtmlReporter extends CakeBaseReporter {
 		echo "<div class='msg'><pre>" . $this->_htmlEntities($message->toString());
 
 		if ((is_string($actualMsg) && is_string($expectedMsg)) || (is_array($actualMsg) && is_array($expectedMsg))) {
-			echo "<br />" . PHPUnit_Util_Diff::diff($expectedMsg, $actualMsg);
+			echo "<br />" . $this->_htmlEntities(PHPUnit_Util_Diff::diff($expectedMsg, $actualMsg));
 		}
 
 		echo "</pre></div>\n";

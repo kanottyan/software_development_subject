@@ -2,8 +2,6 @@
 /**
  * Base class for Shells
  *
- * PHP 5
- *
  * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
  * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
  *
@@ -35,16 +33,22 @@ class Shell extends Object {
 
 /**
  * Output constant making verbose shells.
+ *
+ * @var integer
  */
 	const VERBOSE = 2;
 
 /**
  * Output constant for making normal shells.
+ *
+ * @var integer
  */
 	const NORMAL = 1;
 
 /**
  * Output constants for making quiet shells.
+ *
+ * @var integer
  */
 	const QUIET = 0;
 
@@ -201,6 +205,7 @@ class Shell extends Object {
  */
 	public function initialize() {
 		$this->_loadModels();
+		$this->loadTasks();
 	}
 
 /**
@@ -249,7 +254,7 @@ class Shell extends Object {
 /**
  * Lazy loads models using the loadModel() method if declared in $uses
  *
- * @param string $name
+ * @param string $name The name of the model to look for.
  * @return void
  */
 	public function __isset($name) {
@@ -441,7 +446,7 @@ class Shell extends Object {
 /**
  * Display the help in the correct format
  *
- * @param string $command
+ * @param string $command The command to get help for.
  * @return void
  */
 	protected function _displayHelp($command) {
@@ -457,6 +462,7 @@ class Shell extends Object {
 
 /**
  * Gets the option parser instance and configures it.
+ *
  * By overriding this method you can configure the ConsoleOptionParser before returning it.
  *
  * @return ConsoleOptionParser
@@ -471,7 +477,7 @@ class Shell extends Object {
 /**
  * Overload get for lazy building of tasks
  *
- * @param string $name
+ * @param string $name The property name to access.
  * @return Shell Object of Task
  */
 	public function __get($name) {
@@ -813,7 +819,7 @@ class Shell extends Object {
 /**
  * creates the singular name for use in views.
  *
- * @param string $name
+ * @param string $name The plural underscored value.
  * @return string $name
  */
 	protected function _singularName($name) {

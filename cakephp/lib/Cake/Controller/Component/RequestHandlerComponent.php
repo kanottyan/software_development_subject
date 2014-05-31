@@ -159,7 +159,7 @@ class RequestHandlerComponent extends Component {
 			return;
 		}
 
-		$accepts = $this->response->mapType($this->request->parseAccept());
+		$accepts = $this->response->mapType($accept);
 		$preferedTypes = current($accepts);
 		if (array_intersect($preferedTypes, array('html', 'xhtml'))) {
 			return null;
@@ -518,11 +518,14 @@ class RequestHandlerComponent extends Component {
 		}
 
 		list($contentType) = explode(';', env('CONTENT_TYPE'));
+		if ($contentType === '') {
+			list($contentType) = explode(';', CakeRequest::header('CONTENT_TYPE'));
+		}
 		if (!$type) {
 			return $this->mapType($contentType);
 		}
 		if (is_string($type)) {
-			return ($type == $this->mapType($contentType));
+			return ($type === $this->mapType($contentType));
 		}
 	}
 
@@ -600,13 +603,12 @@ class RequestHandlerComponent extends Component {
 		if (Configure::read('App.encoding') !== null) {
 			$defaults['charset'] = Configure::read('App.encoding');
 		}
-		$options = array_merge($defaults, $options);
+		$options += $defaults;
 
 		if ($type === 'ajax') {
 			$controller->layout = $this->ajaxLayout;
 			return $this->respondAs('html', $options);
 		}
-		$controller->ext = '.ctp';
 
 		$pluginDot = null;
 		$viewClassMap = $this->viewClassMap();

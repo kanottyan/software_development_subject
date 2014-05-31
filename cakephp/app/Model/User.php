@@ -62,9 +62,9 @@ class User extends AppModel {
 			'foreignKey' => 'user_id',
 			'dependent' => false,
 			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
+			'fields' => 'TimeEnd.end',
+			'order' => 'created DESC',
+			'limit' => '1',
 			'offset' => '',
 			'exclusive' => '',
 			'finderQuery' => '',
@@ -75,9 +75,9 @@ class User extends AppModel {
 			'foreignKey' => 'user_id',
 			'dependent' => false,
 			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
+			'fields' => 'TimeStart.start',
+			'order' => 'created DESC',
+			'limit' => '1',
 			'offset' => '',
 			'exclusive' => '',
 			'finderQuery' => '',
@@ -85,4 +85,34 @@ class User extends AppModel {
 		)
 	);
 
+	public function getUsersNameSrattEnd(){
+		$result = $this->find('all',array(
+            'conditions' => array(
+            ),
+            'fields' => array(
+                'User.id','User.name',
+            ),
+            'recursive' => '0',
+		));
+		return $result;
+	}
+
+
+
+/*joinsしてもうまく他テーブルが取得できない??
+	public function getUsers(){
+		$result = $this->find('all',array(
+            'conditions' => array(
+                'User.id' => 1,
+                //'User.id' => 0,
+                //'TimeStart.id' => 0,
+            ),
+            'fields' => array(
+                'User.id','User.name',
+            ),
+            'recursive' => '0',
+		));
+		return $result;
+	}
+*/
 }

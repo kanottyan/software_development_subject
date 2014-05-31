@@ -2,8 +2,6 @@
 /**
  * HttpResponseTest file
  *
- * PHP 5
- *
  * CakePHP(tm) Tests <http://book.cakephp.org/2.0/en/development/testing.html>
  * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
  *
@@ -357,7 +355,7 @@ class HttpResponseTest extends CakeTestCase {
  *
  * @dataProvider invalidParseResponseDataProvider
  * @expectedException SocketException
- * return void
+ * @return void
  */
 	public function testInvalidParseResponseData($value) {
 		$this->HttpResponse->parseResponse($value);

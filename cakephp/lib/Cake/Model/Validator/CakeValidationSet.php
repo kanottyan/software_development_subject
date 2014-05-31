@@ -4,8 +4,6 @@
  *
  * Provides the Model validation logic.
  *
- * PHP 5
- *
  * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
  * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
  *
@@ -327,7 +325,12 @@ class CakeValidationSet implements ArrayAccess, IteratorAggregate, Countable {
 	}
 
 /**
- * Sets or replace a validation rule
+ * Sets or replace a validation rule.
+ *
+ * This is a wrapper for ArrayAccess. Use setRule() directly for
+ * chainable access.
+ *
+ * @see http://www.php.net/manual/en/arrayobject.offsetset.php
  *
  * @param string $index name of the rule
  * @param CakeValidationRule|array rule to add to $index

@@ -2,8 +2,6 @@
 /**
  * CakeResponse
  *
- * PHP 5
- *
  * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
  * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
  *
@@ -250,9 +248,9 @@ class CakeResponse {
 		'f4b' => 'audio/mp4',
 		'gif' => 'image/gif',
 		'ief' => 'image/ief',
-		'jpe' => 'image/jpeg',
-		'jpeg' => 'image/jpeg',
 		'jpg' => 'image/jpeg',
+		'jpeg' => 'image/jpeg',
+		'jpe' => 'image/jpeg',
 		'pbm' => 'image/x-portable-bitmap',
 		'pgm' => 'image/x-portable-graymap',
 		'png' => 'image/png',
@@ -300,6 +298,8 @@ class CakeResponse {
 		'webapp' => 'application/x-web-app-manifest+json',
 		'vcf' => 'text/x-vcard',
 		'vtt' => 'text/vtt',
+		'mkv' => 'video/x-matroska',
+		'pkpass' => 'application/vnd.apple.pkpass'
 	);
 
 /**
@@ -375,10 +375,11 @@ class CakeResponse {
 	protected $_cookies = array();
 
 /**
- * Class constructor
+ * Constructor
  *
  * @param array $options list of parameters to setup the response. Possible values are:
  *	- body: the response text that should be sent to the client
+ *	- statusCodes: additional allowable response codes
  *	- status: the HTTP status code to respond with
  *	- type: a complete mime-type string or an extension mapped in this class
  *	- charset: the charset for the response body
@@ -386,6 +387,9 @@ class CakeResponse {
 	public function __construct(array $options = array()) {
 		if (isset($options['body'])) {
 			$this->body($options['body']);
+		}
+		if (isset($options['statusCodes'])) {
+			$this->httpCodes($options['statusCodes']);
 		}
 		if (isset($options['status'])) {
 			$this->statusCode($options['status']);
@@ -430,9 +434,9 @@ class CakeResponse {
 	}
 
 /**
- * Sets the cookies that have been added via static method CakeResponse::addCookie()
- * before any other output is sent to the client.
- * Will set the cookies in the order they have been set.
+ * Sets the cookies that have been added via CakeResponse::cookie() before any
+ * other output is sent to the client. Will set the cookies in the order they
+ * have been set.
  *
  * @return void
  */
@@ -570,7 +574,7 @@ class CakeResponse {
 			if (is_numeric($header)) {
 				list($header, $value) = array($value, null);
 			}
-			if (is_null($value)) {
+			if ($value === null) {
 				list($header, $value) = explode(':', $header, 2);
 			}
 			$this->_headers[$header] = is_array($value) ? array_map('trim', $value) : trim($value);
@@ -629,12 +633,12 @@ class CakeResponse {
 /**
  * Queries & sets valid HTTP response codes & messages.
  *
- * @param integer|array $code If $code is an integer, then the corresponding code/message is 
- *        returned if it exists, null if it does not exist. If $code is an array, then the 
- *        keys are used as codes and the values as messages to add to the default HTTP 
- *        codes. The codes must be integers greater than 99 and less than 1000. Keep in 
- *        mind that the HTTP specification outlines that status codes begin with a digit 
- *        between 1 and 5, which defines the class of response the client is to expect. 
+ * @param integer|array $code If $code is an integer, then the corresponding code/message is
+ *        returned if it exists, null if it does not exist. If $code is an array, then the
+ *        keys are used as codes and the values as messages to add to the default HTTP
+ *        codes. The codes must be integers greater than 99 and less than 1000. Keep in
+ *        mind that the HTTP specification outlines that status codes begin with a digit
+ *        between 1 and 5, which defines the class of response the client is to expect.
  *        Example:
  *
  *        httpCodes(404); // returns array(404 => 'Not Found')
@@ -1147,7 +1151,7 @@ class CakeResponse {
 			$etagMatches = in_array('*', $etags) || in_array($responseTag, $etags);
 		}
 		if ($modifiedSince) {
-			$timeMatches = strtotime($this->modified()) == strtotime($modifiedSince);
+			$timeMatches = strtotime($this->modified()) === strtotime($modifiedSince);
 		}
 		$checks = compact('etagMatches', 'timeMatches');
 		if (empty($checks)) {
@@ -1237,6 +1241,75 @@ class CakeResponse {
 	}
 
 /**
+ * Setup access for origin and methods on cross origin requests
+ *
+ * This method allow multiple ways to setup the domains, see the examples
+ *
+ * ### Full URI
+ * e.g `cors($request, 'http://www.cakephp.org');`
+ *
+ * ### URI with wildcard
+ * e.g `cors($request, 'http://*.cakephp.org');`
+ *
+ * ### Ignoring the requested protocol
+ * e.g `cors($request, 'www.cakephp.org');`
+ *
+ * ### Any URI
+ * e.g `cors($request, '*');`
+ *
+ * ### Whitelist of URIs
+ * e.g `cors($request, array('http://www.cakephp.org', '*.google.com', 'https://myproject.github.io'));`
+ *
+ * @param CakeRequest $request Request object
+ * @param string|array $allowedDomains List of allowed domains, see method description for more details
+ * @param string|array $allowedMethods List of HTTP verbs allowed
+ * @param string|array $allowedHeaders List of HTTP headers allowed
+ * @return void
+ */
+	public function cors(CakeRequest $request, $allowedDomains, $allowedMethods = array(), $allowedHeaders = array()) {
+		$origin = $request->header('Origin');
+		if (!$origin) {
+			return;
+		}
+
+		$allowedDomains = $this->_normalizeCorsDomains((array)$allowedDomains, $request->is('ssl'));
+		foreach ($allowedDomains as $domain) {
+			if (!preg_match($domain['preg'], $origin)) {
+				continue;
+			}
+			$this->header('Access-Control-Allow-Origin', $domain['original'] === '*' ? '*' : $origin);
+			$allowedMethods && $this->header('Access-Control-Allow-Methods', implode(', ', (array)$allowedMethods));
+			$allowedHeaders && $this->header('Access-Control-Allow-Headers', implode(', ', (array)$allowedHeaders));
+			break;
+		}
+	}
+
+/**
+ * Normalize the origin to regular expressions and put in an array format
+ *
+ * @param array $domains
+ * @param boolean $requestIsSSL
+ * @return array
+ */
+	protected function _normalizeCorsDomains($domains, $requestIsSSL = false) {
+		$result = array();
+		foreach ($domains as $domain) {
+			if ($domain === '*') {
+				$result[] = array('preg' => '@.@', 'original' => '*');
+				continue;
+			}
+
+			$original = $preg = $domain;
+			if (strpos($domain, '://') === false) {
+				$preg = ($requestIsSSL ? 'https://' : 'http://') . $domain;
+			}
+			$preg = '@' . str_replace('*', '.*', $domain) . '@';
+			$result[] = compact('original', 'preg');
+		}
+		return $result;
+	}
+
+/**
  * Setup for display or download the given file.
  *
  * If $_SERVER['HTTP_RANGE'] is set a slice of the file will be
@@ -1247,7 +1320,8 @@ class CakeResponse {
  * - name: Alternate download name
  * - download: If `true` sets download header and forces file to be downloaded rather than displayed in browser
  *
- * @param string $path Path to file
+ * @param string $path Path to file. If the path is not an absolute path that resolves
+ *   to a file, `APP` will be prepended to the path.
  * @param array $options Options See above.
  * @return void
  * @throws NotFoundException
@@ -1257,6 +1331,13 @@ class CakeResponse {
 			'name' => null,
 			'download' => null
 		);
+
+		if (strpos($path, '..') !== false) {
+			throw new NotFoundException(__d(
+				'cake_dev',
+				'The requested file contains `..` and will not be read.'
+			));
+		}
 
 		if (!is_file($path)) {
 			$path = APP . $path;
@@ -1281,7 +1362,7 @@ class CakeResponse {
 			$agent = env('HTTP_USER_AGENT');
 
 			if (preg_match('%Opera(/| )([0-9].[0-9]{1,2})%', $agent)) {
-				$contentType = 'application/octetstream';
+				$contentType = 'application/octet-stream';
 			} elseif (preg_match('/MSIE ([0-9].[0-9]{1,2})/', $agent)) {
 				$contentType = 'application/force-download';
 			}
@@ -1296,6 +1377,7 @@ class CakeResponse {
 			}
 			$this->download($name);
 			$this->header('Accept-Ranges', 'bytes');
+			$this->header('Content-Transfer-Encoding', 'binary');
 
 			$httpRange = env('HTTP_RANGE');
 			if (isset($httpRange)) {
@@ -1373,6 +1455,7 @@ class CakeResponse {
 
 		$bufferSize = 8192;
 		set_time_limit(0);
+		session_write_close();
 		while (!feof($file->handle)) {
 			if (!$this->_isActive()) {
 				$file->close();

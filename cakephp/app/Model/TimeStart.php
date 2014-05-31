@@ -52,10 +52,5 @@ class TimeStart extends AppModel {
 			'order' => ''
 		)
 	);
-	public function getUsersLastStart(){
-		$result = $this->find('all',array(
-				));
-		return $result;
-	}
 
 }

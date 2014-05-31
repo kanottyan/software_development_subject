@@ -1,7 +1,6 @@
 <?php
 /**
  *
- * PHP 5
  *
  * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
  * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
@@ -83,9 +82,9 @@ class Permission extends AppModel {
 		$aroPath = $this->Aro->node($aro);
 		$acoPath = $this->Aco->node($aco);
 
-		if (!$aroPath || !$acoPath) {
-			trigger_error(__d('cake_dev',
-					"%s - Failed ARO/ACO node lookup in permissions check. Node references:\nAro: %s\nAco: %s",
+		if (!$aroPath) {
+			$this->log(__d('cake_dev',
+					"%s - Failed ARO node lookup in permissions check. Node references:\nAro: %s\nAco: %s",
 					'DbAcl::check()',
 					print_r($aro, true),
 					print_r($aco, true)),
@@ -95,7 +94,7 @@ class Permission extends AppModel {
 		}
 
 		if (!$acoPath) {
-			trigger_error(__d('cake_dev',
+			$this->log(__d('cake_dev',
 					"%s - Failed ACO node lookup in permissions check. Node references:\nAro: %s\nAco: %s",
 					'DbAcl::check()',
 					print_r($aro, true),
@@ -106,7 +105,7 @@ class Permission extends AppModel {
 		}
 
 		if ($action !== '*' && !in_array('_' . $action, $permKeys)) {
-			trigger_error(__d('cake_dev', "ACO permissions key %s does not exist in %s", $action, 'DbAcl::check()'), E_USER_NOTICE);
+			$this->log(__d('cake_dev', "ACO permissions key %s does not exist in %s", $action, 'DbAcl::check()'), E_USER_NOTICE);
 			return false;
 		}
 
@@ -177,7 +176,7 @@ class Permission extends AppModel {
 		$save = array();
 
 		if (!$perms) {
-			trigger_error(__d('cake_dev', '%s - Invalid node', 'DbAcl::allow()'), E_USER_WARNING);
+			$this->log(__d('cake_dev', '%s - Invalid node', 'DbAcl::allow()'), E_USER_WARNING);
 			return false;
 		}
 		if (isset($perms[0])) {

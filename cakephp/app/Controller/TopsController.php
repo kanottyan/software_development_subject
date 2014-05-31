@@ -36,15 +36,38 @@ class TopsController extends AppController{
                 }
             }
         }
+
+
+
+        //出勤時間の取得
+        $time_users_lastin = array();
+        $test = $this->User->getUsersNameSrattEnd();
+        foreach ($test as $test){
+            if( empty($test['TimeStart'][0]['start'])){
+                array_push($time_users_lastin,"未登録");
+            }else{
+                array_push($time_users_lastin,$test['TimeStart'][0]['start']);
+            }
+        }
+
+        //退勤時間の登録
+        $time_users_lastout = array();
+        $test = $this->User->getUsersNameSrattEnd();
+        foreach ($test as $test){
+            if( empty($test['TimeEnd'][0]['end'])){
+                array_push($time_users_lastout,"未登録");
+            }else{
+                array_push($time_users_lastout,$test['TimeEnd'][0]['end']);
+            }
+        }
+
         $users = $this->User->find('list');
         $starts = $this->TimeStart->User->find('all',array(
             ));
         $ends = $this->TimeEnd->User->find('all');
         $nowtime = date("Y-m-d H:i:s");
+        $this->set(compact('users','starts','ends','nowtime','test','time_users_lastin','time_users_lastout'));
 
-        $this->set(compact('users','starts','ends','nowtime','test'));
-        //$count_start_times = $this ->
-        //$count_end_times =
 
 
     }

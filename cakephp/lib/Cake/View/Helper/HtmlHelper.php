@@ -174,12 +174,13 @@ class HtmlHelper extends AppHelper {
  * @param string $name Text for link
  * @param string $link URL for link (if empty it won't be a link)
  * @param string|array $options Link attributes e.g. array('id' => 'selected')
- * @return void
+ * @return this HtmlHelper
  * @see HtmlHelper::link() for details on $options that can be used.
  * @link http://book.cakephp.org/2.0/en/core-libraries/helpers/html.html#creating-breadcrumb-trails-with-htmlhelper
  */
 	public function addCrumb($name, $link = null, $options = null) {
 		$this->_crumbs[] = array($name, $link, $options);
+		return $this;
 	}
 
 /**
@@ -253,7 +254,7 @@ class HtmlHelper extends AppHelper {
 			);
 
 			if ($type === 'icon' && $url === null) {
-				$types['icon']['link'] = $this->webroot('favicon.ico');
+				$types['icon']['link'] = 'favicon.ico';
 			}
 
 			if (isset($types[$type])) {
@@ -272,15 +273,14 @@ class HtmlHelper extends AppHelper {
 			}
 		}
 
-		$options = array_merge($type, $options);
+		$options += $type;
 		$out = null;
 
 		if (isset($options['link'])) {
+			$options['link'] = $this->assetUrl($options['link']);
 			if (isset($options['rel']) && $options['rel'] === 'icon') {
 				$out = sprintf($this->_tags['metalink'], $options['link'], $this->_parseAttributes($options, array('block', 'link'), ' ', ' '));
 				$options['rel'] = 'shortcut icon';
-			} else {
-				$options['link'] = $this->url($options['link'], true);
 			}
 			$out .= sprintf($this->_tags['metalink'], $options['link'], $this->_parseAttributes($options, array('block', 'link'), ' ', ' '));
 		} else {
@@ -401,7 +401,7 @@ class HtmlHelper extends AppHelper {
  *   This overrides the `inline` option.
  * - `plugin` False value will prevent parsing path as a plugin
  * - `rel` Defaults to 'stylesheet'. If equal to 'import' the stylesheet will be imported.
- * - `fullBase` If true the url will get a full address for the css file.
+ * - `fullBase` If true the URL will get a full address for the css file.
  *
  * @param string|array $path The name of a CSS style sheet or an array containing names of
  *   CSS stylesheets. If `$path` is prefixed with '/', the path will be relative to the webroot
@@ -454,7 +454,7 @@ class HtmlHelper extends AppHelper {
 			}
 		}
 
-		if ($options['rel'] == 'import') {
+		if ($options['rel'] === 'import') {
 			$out = sprintf(
 				$this->_tags['style'],
 				$this->_parseAttributes($options, array('rel', 'block'), '', ' '),
@@ -522,7 +522,7 @@ class HtmlHelper extends AppHelper {
 			list($inline, $options) = array($options, array());
 			$options['inline'] = $inline;
 		}
-		$options = array_merge(array('block' => null, 'inline' => true, 'once' => true), $options);
+		$options += array('block' => null, 'inline' => true, 'once' => true);
 		if (!$options['inline'] && empty($options['block'])) {
 			$options['block'] = __FUNCTION__;
 		}
@@ -714,14 +714,15 @@ class HtmlHelper extends AppHelper {
  * @link http://book.cakephp.org/2.0/en/core-libraries/helpers/html.html#creating-breadcrumb-trails-with-htmlhelper
  */
 	public function getCrumbList($options = array(), $startText = false) {
-		$defaults = array('firstClass' => 'first', 'lastClass' => 'last', 'separator' => '');
-		$options = array_merge($defaults, (array)$options);
+		$defaults = array('firstClass' => 'first', 'lastClass' => 'last', 'separator' => '', 'escape' => true);
+		$options = (array)$options + $defaults;
 		$firstClass = $options['firstClass'];
 		$lastClass = $options['lastClass'];
 		$separator = $options['separator'];
-		unset($options['firstClass'], $options['lastClass'], $options['separator']);
+		$escape = $options['escape'];
+		unset($options['firstClass'], $options['lastClass'], $options['separator'], $options['escape']);
 
-		$crumbs = $this->_prepareCrumbs($startText);
+		$crumbs = $this->_prepareCrumbs($startText, $escape);
 		if (empty($crumbs)) {
 			return null;
 		}
@@ -753,9 +754,10 @@ class HtmlHelper extends AppHelper {
  * Prepends startText to crumbs array if set
  *
  * @param string $startText Text to prepend
+ * @param boolean $escape If the output should be escaped or not
  * @return array Crumb list including startText (if provided)
  */
-	protected function _prepareCrumbs($startText) {
+	protected function _prepareCrumbs($startText, $escape = true) {
 		$crumbs = $this->_crumbs;
 		if ($startText) {
 			if (!is_array($startText)) {
@@ -767,7 +769,7 @@ class HtmlHelper extends AppHelper {
 			$startText += array('url' => '/', 'text' => __d('cake', 'Home'));
 			list($url, $text) = array($startText['url'], $startText['text']);
 			unset($startText['url'], $startText['text']);
-			array_unshift($crumbs, array($text, $url, $startText));
+			array_unshift($crumbs, array($text, $url, $startText + array('escape' => $escape)));
 		}
 		return $crumbs;
 	}
@@ -1229,13 +1231,13 @@ class HtmlHelper extends AppHelper {
 		$readerObj = new $readerClass($path);
 		$configs = $readerObj->read($file);
 		if (isset($configs['tags']) && is_array($configs['tags'])) {
-			$this->_tags = array_merge($this->_tags, $configs['tags']);
+			$this->_tags = $configs['tags'] + $this->_tags;
 		}
 		if (isset($configs['minimizedAttributes']) && is_array($configs['minimizedAttributes'])) {
-			$this->_minimizedAttributes = array_merge($this->_minimizedAttributes, $configs['minimizedAttributes']);
+			$this->_minimizedAttributes = $configs['minimizedAttributes'] + $this->_minimizedAttributes;
 		}
 		if (isset($configs['docTypes']) && is_array($configs['docTypes'])) {
-			$this->_docTypes = array_merge($this->_docTypes, $configs['docTypes']);
+			$this->_docTypes = $configs['docTypes'] + $this->_docTypes;
 		}
 		if (isset($configs['attributeFormat'])) {
 			$this->_attributeFormat = $configs['attributeFormat'];

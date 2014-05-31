@@ -2,8 +2,6 @@
 /**
  * HTTP Response from HttpSocket.
  *
- * PHP 5
- *
  * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
  * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
  *
@@ -161,10 +159,12 @@ class HttpSocketResponse implements ArrayAccess {
 		$this->raw = $message;
 		$this->body = (string)substr($message, strlen($match[0]));
 
-		if (preg_match("/(.+) ([0-9]{3}) (.+)\r\n/DU", $statusLine, $match)) {
+		if (preg_match("/(.+) ([0-9]{3})(?:\s+(\w.+))?\s*\r\n/DU", $statusLine, $match)) {
 			$this->httpVersion = $match[1];
 			$this->code = $match[2];
-			$this->reasonPhrase = $match[3];
+			if (isset($match[3])) {
+				$this->reasonPhrase = $match[3];
+			}
 		}
 
 		$this->headers = $this->_parseHeader($header);

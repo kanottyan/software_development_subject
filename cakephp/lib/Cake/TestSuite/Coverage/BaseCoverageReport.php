@@ -61,7 +61,6 @@ abstract class BaseCoverageReport {
  *
  * @param array $coverage Array of coverage data from PHPUnit_Test_Result
  * @param CakeBaseReporter $reporter A reporter to use for the coverage report.
- * @return void
  */
 	public function __construct($coverage, CakeBaseReporter $reporter) {
 		$this->_rawCoverage = $coverage;
@@ -96,7 +95,7 @@ abstract class BaseCoverageReport {
 /**
  * Gets the base path that the files we are interested in live in.
  *
- * @return void
+ * @return string Path
  */
 	public function getPathFilter() {
 		$path = ROOT . DS;
