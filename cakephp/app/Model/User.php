@@ -62,7 +62,7 @@ class User extends AppModel {
 			'foreignKey' => 'user_id',
 			'dependent' => false,
 			'conditions' => '',
-			'fields' => 'TimeEnd.end',
+			'fields' => 'TimeEnd.*',
 			'order' => 'created DESC',
 			'limit' => '1',
 			'offset' => '',
@@ -75,7 +75,7 @@ class User extends AppModel {
 			'foreignKey' => 'user_id',
 			'dependent' => false,
 			'conditions' => '',
-			'fields' => 'TimeStart.start',
+			'fields' => 'TimeStart.*',
 			'order' => 'created DESC',
 			'limit' => '1',
 			'offset' => '',
@@ -90,7 +90,7 @@ class User extends AppModel {
             'conditions' => array(
             ),
             'fields' => array(
-                'User.id','User.name',
+                'User.id','User.name'
             ),
             'recursive' => '0',
 		));
