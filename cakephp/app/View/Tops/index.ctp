@@ -50,11 +50,9 @@
             <th>退勤時間</th>
         </tr>
 
-            <?php $time_start_array = array();?>
-            <?php $time_end_array = array(); ?>
-
             <?php /*
             <?php //出勤時間の取得（リファクタリング前）?>
+            <?php $time_start_array = array();?>
             <?php foreach ($starts as $starts) :?>
                 <?php $last_time_in = count($starts['TimeStart'])-1 ?>
                 <?php if( empty($starts['TimeStart'])){
@@ -67,6 +65,7 @@
 
             <?php /*
             <?php //退勤時間の取得（リファクタリング前）?>
+            <?php $time_end_array = array(); ?>
             <?php foreach ($ends as $ends) :?>
                 <?php $last_time_out = count($ends['TimeEnd'])-1 ?>
                 <?php if( empty($ends['TimeEnd'])){
@@ -78,15 +77,15 @@
             */?>
 
             <?php //データを表示?>
+            <?php $i = 0; ?>
             <?php foreach ($users as $key => $users) :?>
                 <tr>
                     <td><?php echo $users ;?></td>
-                    <td><?php echo $time_users_lastin[$key-1] ;?></td>
-                    <td><?php echo $time_users_lastout[$key-1]; ?></td>
+                    <td><?php echo $time_users_lastin[$i] ;?></td>
+                    <td><?php echo $time_users_lastout[$i]; ?></td>
                 </tr>
-
+            <?php $i++ ?>
             <?php endforeach; ?>
-
         </table>
     </div>
 </div>

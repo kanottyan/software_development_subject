@@ -43,7 +43,7 @@ class TopsController extends AppController{
         $time_users_lastin = array();
         $test = $this->User->getUsersNameSrattEnd();
         foreach ($test as $test){
-            if( empty($test['TimeStart'][0]['start'])){
+            if( empty($test['TimeStart'])){
                 array_push($time_users_lastin,"未登録");
             }else{
                 array_push($time_users_lastin,$test['TimeStart'][0]['start']);
@@ -54,7 +54,7 @@ class TopsController extends AppController{
         $time_users_lastout = array();
         $test = $this->User->getUsersNameSrattEnd();
         foreach ($test as $test){
-            if( empty($test['TimeEnd'][0]['end'])){
+            if( empty($test['TimeEnd'])){
                 array_push($time_users_lastout,"未登録");
             }else{
                 array_push($time_users_lastout,$test['TimeEnd'][0]['end']);
